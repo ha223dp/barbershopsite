@@ -65,9 +65,9 @@ function App() {
     <div className="min-h-screen bg-black text-white">
       {/* Header */}
       <header className="fixed top-0 w-full bg-black/95 backdrop-blur-sm z-50 border-b border-amber-600/20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-full md:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
-            <button 
+            <button
               onClick={scrollToTop}
               className="flex items-center space-x-3 hover:opacity-80 transition-opacity"
             >
@@ -83,29 +83,29 @@ function App() {
                 </p>
               </div>
             </button>
-            
+
             {/* Desktop Navigation */}
             <nav className="hidden md:flex space-x-8">
-              <button 
-                onClick={() => scrollToSection('hem')} 
+              <button
+                onClick={() => scrollToSection('hem')}
                 className="text-white hover:text-amber-600 transition-colors uppercase tracking-wide text-sm font-medium"
               >
                 Hem
               </button>
-              <button 
-                onClick={() => scrollToSection('tjanster')} 
+              <button
+                onClick={() => scrollToSection('tjanster')}
                 className="text-white hover:text-amber-600 transition-colors uppercase tracking-wide text-sm font-medium"
               >
                 Tjänster
               </button>
-              <button 
-                onClick={() => scrollToSection('om-oss')} 
+              <button
+                onClick={() => scrollToSection('om-oss')}
                 className="text-white hover:text-amber-600 transition-colors uppercase tracking-wide text-sm font-medium"
               >
                 Om Oss
               </button>
-              <button 
-                onClick={() => scrollToSection('kontakt')} 
+              <button
+                onClick={() => scrollToSection('kontakt')}
                 className="text-white hover:text-amber-600 transition-colors uppercase tracking-wide text-sm font-medium"
               >
                 Kontakt
@@ -126,26 +126,26 @@ function App() {
           {isMenuOpen && (
             <nav className="md:hidden py-4 border-t border-amber-600/20">
               <div className="flex flex-col space-y-4">
-                <button 
-                  onClick={() => scrollToSection('hem')} 
+                <button
+                  onClick={() => scrollToSection('hem')}
                   className="text-left text-white hover:text-amber-600 transition-colors uppercase tracking-wide text-sm font-medium py-2"
                 >
                   Hem
                 </button>
-                <button 
-                  onClick={() => scrollToSection('tjanster')} 
+                <button
+                  onClick={() => scrollToSection('tjanster')}
                   className="text-left text-white hover:text-amber-600 transition-colors uppercase tracking-wide text-sm font-medium py-2"
                 >
                   Tjänster
                 </button>
-                <button 
-                  onClick={() => scrollToSection('om-oss')} 
+                <button
+                  onClick={() => scrollToSection('om-oss')}
                   className="text-left text-white hover:text-amber-600 transition-colors uppercase tracking-wide text-sm font-medium py-2"
                 >
                   Om Oss
                 </button>
-                <button 
-                  onClick={() => scrollToSection('kontakt')} 
+                <button
+                  onClick={() => scrollToSection('kontakt')}
                   className="text-left text-white hover:text-amber-600 transition-colors uppercase tracking-wide text-sm font-medium py-2"
                 >
                   Kontakt
@@ -158,7 +158,7 @@ function App() {
 
       {/* Hero Section */}
       <section id="hem" className="relative min-h-screen flex items-center justify-center pt-16">
-        <div 
+        <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage: 'url(https://images.pexels.com/photos/1570807/pexels-photo-1570807.jpeg?auto=compress&cs=tinysrgb&w=1920)',
@@ -166,8 +166,8 @@ function App() {
         >
           <div className="absolute inset-0 bg-black/70"></div>
         </div>
-               
-        <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+
+        <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-full md:max-w-4xl mx-auto">
           <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight tracking-wider">
             PROFESSIONELL
             <span className="block text-amber-600 font-black mt-2">HERRFRISÖR</span>
@@ -176,14 +176,14 @@ function App() {
             Traditionell frisörkonst möter modern stil i hjärtat av Uppsala
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a 
+            <a
               href="tel:018262162"
               className="w-full sm:w-auto bg-amber-600 text-black px-8 py-4 font-bold hover:bg-amber-500 transition-all duration-300 transform hover:scale-105 inline-flex items-center justify-center uppercase tracking-wide"
             >
               <Phone className="w-5 h-5 mr-2" />
               Boka Tid Nu
             </a>
-            <button 
+            <button
               onClick={() => scrollToSection('tjanster')}
               className="w-full sm:w-auto border-2 border-amber-600 text-amber-600 px-8 py-4 font-bold hover:bg-amber-600 hover:text-black transition-all duration-300 uppercase tracking-wide"
             >
@@ -195,7 +195,7 @@ function App() {
 
       {/* Services Section */}
       <section id="tjanster" className="py-16 sm:py-20 bg-gray-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-full md:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white mb-4 uppercase tracking-widest">
               Våra Tjänster
@@ -209,7 +209,7 @@ function App() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
             {services.map((service, index) => (
               <div key={index} className="group relative overflow-hidden bg-gray-800 hover:bg-gray-700 transition-all duration-300 rounded-lg">
-                <div 
+                <div
                   className="h-48 sm:h-56 lg:h-64 bg-cover bg-center transition-transform duration-300 group-hover:scale-110"
                   style={{ backgroundImage: `url(${service.image})` }}
                 >
@@ -234,7 +234,7 @@ function App() {
 
       {/* About Section */}
       <section id="om-oss" className="py-16 sm:py-20 bg-black">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-full md:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div>
               <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white mb-6 uppercase tracking-widest leading-tight">
@@ -242,14 +242,14 @@ function App() {
               </h2>
               <div className="w-24 sm:w-32 h-1 bg-amber-600 mb-6"></div>
               <p className="text-base sm:text-lg text-gray-300 mb-6 leading-relaxed font-light">
-                Salong Victoria AB Herrfrisör är en etablerad frisörsalong i Uppsala som har betjänat kunder i över 10 år. 
+                Salong Victoria AB Herrfrisör är en etablerad frisörsalong i Uppsala som har betjänat kunder i över 10 år.
                 Vi specialiserar oss på herrfrisyr och erbjuder en bred palette av tjänster från klassiska klippningar till moderna stilar.
               </p>
               <p className="text-base sm:text-lg text-gray-300 mb-8 leading-relaxed font-light">
-                Vår passion är att få varje kund att känna sig välvårdad och självsäker. Vi använder endast högkvalitativa produkter 
+                Vår passion är att få varje kund att känna sig välvårdad och självsäker. Vi använder endast högkvalitativa produkter
                 och de senaste teknikerna för att säkerställa bästa resultat.
               </p>
-              
+
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-8">
                 <div className="text-center">
                   <div className="text-2xl sm:text-3xl font-black text-amber-600 mb-2">10+</div>
@@ -265,7 +265,7 @@ function App() {
                 </div>
               </div>
             </div>
-            
+
             <div className="bg-gray-900 p-6 sm:p-8 rounded-lg">
               <h3 className="text-xl sm:text-2xl font-bold text-white mb-6 uppercase tracking-widest">Öppettider</h3>
               <div className="space-y-4">
@@ -282,7 +282,7 @@ function App() {
                   <span className="text-white font-semibold">Stängt</span>
                 </div>
               </div>
-              
+
               <div className="mt-8 pt-6 border-t border-gray-700">
                 <div className="flex items-center mb-4">
                   <Clock className="w-5 h-5 text-amber-600 mr-3 flex-shrink-0" />
@@ -300,7 +300,7 @@ function App() {
 
       {/* Contact Section */}
       <section id="kontakt" className="py-16 sm:py-20 bg-gray-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-full md:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white mb-4 uppercase tracking-widest">
               Kontakt
@@ -318,7 +318,7 @@ function App() {
                 <h3 className="text-xl sm:text-2xl font-bold text-white mb-6 uppercase tracking-widest">
                   Kontaktinformation
                 </h3>
-                
+
                 <div className="space-y-6">
                   <div className="flex items-center">
                     <Phone className="w-6 h-6 text-amber-600 mr-4 flex-shrink-0" />
@@ -329,7 +329,7 @@ function App() {
                       </a>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-center">
                     <Phone className="w-6 h-6 text-amber-600 mr-4 flex-shrink-0" />
                     <div>
@@ -339,7 +339,7 @@ function App() {
                       </a>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start">
                     <MapPin className="w-6 h-6 text-amber-600 mr-4 mt-1 flex-shrink-0" />
                     <div>
@@ -351,7 +351,7 @@ function App() {
                       </p>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-center">
                     <Facebook className="w-6 h-6 text-amber-600 mr-4 flex-shrink-0" />
                     <div>
@@ -387,7 +387,7 @@ function App() {
 
       {/* Footer */}
       <footer className="bg-black py-8 sm:py-12 border-t border-amber-600/20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-full md:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
               <div className="flex items-center space-x-3 mb-4">
@@ -405,7 +405,7 @@ function App() {
                 Din professionella frisörsalong i Uppsala med över 10 års erfarenhet.
               </p>
             </div>
-            
+
             <div>
               <h4 className="text-base sm:text-lg font-semibold mb-4 text-white uppercase tracking-widest">
                 Kontakt
@@ -425,7 +425,7 @@ function App() {
                 </p>
               </div>
             </div>
-            
+
             <div>
               <h4 className="text-base sm:text-lg font-semibold mb-4 text-white uppercase tracking-widest">
                 Öppettider
@@ -437,7 +437,7 @@ function App() {
               </div>
             </div>
           </div>
-          
+
           <div className="border-t border-gray-700 mt-8 pt-8 text-center">
             <p className="text-gray-400 text-sm font-light">
               © 2025 Salong Victoria AB Herrfrisör. Alla rättigheter förbehållna.
