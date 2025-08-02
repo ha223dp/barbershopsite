@@ -202,7 +202,7 @@ function App() {
             </h2>
             <div className="w-24 sm:w-32 h-1 bg-amber-600 mx-auto mb-6"></div>
             <p className="text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto font-light tracking-wide">
-              Expertis inom herrfrisyr med över 10 års erfarenhet
+              Expertis inom herrfrisyr med över 5 års erfarenhet
             </p>
           </div>
 
@@ -242,7 +242,7 @@ function App() {
               </h2>
               <div className="w-24 sm:w-32 h-1 bg-amber-600 mb-6"></div>
               <p className="text-base sm:text-lg text-gray-300 mb-6 leading-relaxed font-light">
-                Salong Victoria AB Herrfrisör är en etablerad frisörsalong i Uppsala som har betjänat kunder i över 10 år.
+                Salong Victoria AB Herrfrisör är en etablerad frisörsalong i Uppsala som har betjänat kunder i över 5 år.
                 Vi specialiserar oss på herrfrisyr och erbjuder en bred palette av tjänster från klassiska klippningar till moderna stilar.
               </p>
               <p className="text-base sm:text-lg text-gray-300 mb-8 leading-relaxed font-light">
@@ -252,7 +252,7 @@ function App() {
 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-8">
                 <div className="text-center">
-                  <div className="text-2xl sm:text-3xl font-black text-amber-600 mb-2">10+</div>
+                  <div className="text-2xl sm:text-3xl font-black text-amber-600 mb-2">5+</div>
                   <div className="text-gray-300 text-xs sm:text-sm uppercase tracking-widest font-medium">Års Erfarenhet</div>
                 </div>
                 <div className="text-center">
@@ -402,7 +402,7 @@ function App() {
                 </div>
               </div>
               <p className="text-gray-300 text-sm font-light">
-                Din professionella frisörsalong i Uppsala med över 10 års erfarenhet.
+                Din professionella frisörsalong i Uppsala med över 5 års erfarenhet.
               </p>
             </div>
 
