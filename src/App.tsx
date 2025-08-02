@@ -37,7 +37,7 @@ function App() {
     },
     {
       name: "Traditionell Rakning",
-      description: "Klassisk rakning med rakkniv och varmt handduk",
+      description: "Klassisk rakning med rakkniv",
       price: "",
       image: "https://images.pexels.com/photos/1570806/pexels-photo-1570806.jpeg?auto=compress&cs=tinysrgb&w=400"
     },
