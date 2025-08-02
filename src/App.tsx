@@ -356,7 +356,7 @@ function App() {
                     <Facebook className="w-6 h-6 text-amber-600 mr-4 flex-shrink-0" />
                     <div>
                       <p className="font-semibold text-white uppercase tracking-wide text-sm">Sociala Medier</p>
-                      <a href="#" className="text-amber-600 hover:text-amber-500 transition-colors font-light">
+                      <a href="https://www.facebook.com/p/Salong-Victoria-100063697323815/" className="text-amber-600 hover:text-amber-500 transition-colors font-light">
                         Följ oss på Facebook
                       </a>
                     </div>
