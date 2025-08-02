@@ -26,7 +26,7 @@ function App() {
     {
       name: "Herrklippning",
       description: "Klassisk och modern herrklippning",
-      price: "Från 350 kr",
+      price: "",
       image: "https://images.pexels.com/photos/1319460/pexels-photo-1319460.jpeg?auto=compress&cs=tinysrgb&w=400"
     },
     {
