@@ -32,7 +32,7 @@ function App() {
     {
       name: "Skäggvård",
       description: "Professionell skäggtrimning och styling",
-      price: "Från 250 kr",
+      price: "",
       image: "https://images.pexels.com/photos/1319461/pexels-photo-1319461.jpeg?auto=compress&cs=tinysrgb&w=400"
     },
     {
