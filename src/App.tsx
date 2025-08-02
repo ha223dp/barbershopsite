@@ -44,7 +44,7 @@ function App() {
     {
       name: "Styling & Vård",
       description: "Komplett styling för speciella tillfällen",
-      price: "Från 200 kr",
+      price: "",
       image: "https://images.pexels.com/photos/3998421/pexels-photo-3998421.jpeg?auto=compress&cs=tinysrgb&w=400"
     }
   ];
