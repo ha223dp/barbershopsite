@@ -252,7 +252,7 @@ function App() {
 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-8">
                 <div className="text-center">
-                  <div className="text-2xl sm:text-3xl font-black text-amber-600 mb-2">5+</div>
+                  <div className="text-2xl sm:text-3xl font-black text-amber-600 mb-2">15+</div>
                   <div className="text-gray-300 text-xs sm:text-sm uppercase tracking-widest font-medium">Års Erfarenhet</div>
                 </div>
                 <div className="text-center">
